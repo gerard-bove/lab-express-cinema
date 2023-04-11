@@ -1,8 +1,77 @@
-body {
-  padding: 50px;
+body, html {
+  padding: 0;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  margin: auto;
+  position: relative;
+  width: 90%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container-2 {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: none;
+  cursor: pointer;
+}
+.container h1 {
+  font-size: 64px;
+  color: white;
+}
+.container a {
+  background-color: white;
+  font-weight: 600;
+  width: 120px;
+  color: #89a6b1;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
+h2 {
+  font-size: 45px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-image {
+  width: 220px;
+  margin: 2px 5px;
+}
+
+.movie-description {
+  width: 400px;
+
 }

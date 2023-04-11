@@ -1,0 +1,14 @@
+<h2 class="m-5">List of Movies</h2>
+<div class="row">
+    {{#each movies}}
+        <div class="card m-4" style="width: 18rem;">
+            <img src={{image}} class="card-img-top" alt={{title}}>
+            <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+            </div>
+            <div class="card-body">
+                <a href='movie/{{_id}}' class="card-link">See more</a>
+            </div>
+        </div>
+    {{/each}}
+</div>

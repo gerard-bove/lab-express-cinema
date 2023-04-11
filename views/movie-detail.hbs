@@ -1,0 +1,21 @@
+<a href="/movies" class="btn btn-primary m-4">Go back</a>
+
+<div class="movie-container">
+    <div class="movie-image">
+        <img src={{movie.image}} alt={{movie.name}}>
+    </div>
+    <div class="movie-description">
+        <h3>{{movie.title}}</h2>
+        <h4>Director: {{movie.director}}</h3>
+        <p>Stars</p>
+        <ul>
+            {{#each movie.stars}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{movie.description}}</p>
+        {{#each movie.showtimes}}
+            {{this}} |
+        {{/each}}
+    </div>
+</div>
